@@ -33,11 +33,13 @@
 ## STEP 3: Install a TLS Certificate(Recommended via cert-manager)
  - Rancher users HTTPS. You can use **cert-manger** to automate certificates.
  ```bash
- kubectl
+ kubectl apply -f https://github.com/cert-manager/cert-manager/releases/latest/download/cert-manager.yaml
+
    ``` 
 - Wait a few minutes for all pods to be ready:
    ```bash
- kubectl exec -it mon
+ kubectl get pods -n cert-manager
+
    ``` 
 - You should see:
     
