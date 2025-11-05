@@ -38,9 +38,7 @@
    ``` 
 - Wait a few minutes for all pods to be ready:
    ```bash
- kubectl get pods -n cert-manager
-
+  kubectl get pods -n cert-manager
    ``` 
-- You should see:
     
 
