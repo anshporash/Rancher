@@ -40,11 +40,19 @@
    ```bash
   kubectl get pods -n cert-manager
    ```
-  ## STEP 4: Install Rancher via Helm
+## STEP 4: Install Rancher via Helm
  - Replace `your.domain.com` with the domain you'll use for Rancher(it must point to your ingress controller's public IP).
  ```bash
- kubectl apply -f https://github.com/cert-manager/cert-manager/releases/latest/download/cert-manager.yaml
+ helm install rancher rancher-latest/rancher \
+  --namespace cattle-system \
+  --set hostname=your.domain.com \
+  --set replicas=1
 
-   ``` 
+
+   ```
+## STEP 5: Create the **Cattle-system** Namespace
+   ```bash
+      kubectl create namespace cattle-system
+ ```
     
 
