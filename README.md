@@ -57,5 +57,8 @@
    ```bash
   kubectl get pods -n cattle-system
    ```
+   - You should see Rancher pods running.
+  ---
+  
     
 
