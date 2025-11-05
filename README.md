@@ -17,4 +17,15 @@
         ```bash
         kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/cloud/deploy.yaml
         ```
-        
+
+   ---
+   
+## STEP 1: Add the Rancher Helm Repository
+     ```bash
+      curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+     ```
+     
+## STEP 2: Create the **Cattle-system** Namespace
+   ```bash
+      kubectl create namespace cattle-system
+     ```
