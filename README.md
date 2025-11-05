@@ -72,7 +72,6 @@
       kubectl -n cattle-system port-forward svc/rancher 8443:443
  ```
 - Then visit:
- ---
     ```bash
       https://localhost:8443
  ```
