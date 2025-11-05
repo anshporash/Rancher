@@ -66,7 +66,16 @@
  ```
 - Set the admin password the first time you log in.
  ---
- 
+## Optional: if you Don't Have a Domain
+-if you'r testing locally or don't have DNS setup,you can use a`NodePort` or `port-forward` to access Rancher:
+   ```bash
+      kubectl -n cattle-system port-forward svc/rancher 8443:443
+ ```
+- Then visit:
+ ---
+    ```bash
+      https://localhost:8443
+ ```
   
     
 
