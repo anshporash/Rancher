@@ -33,7 +33,11 @@
 ## STEP 3: Install a TLS Certificate(Recommended via cert-manager)
  - Rancher users HTTPS. You can use **cert-manger** to automate certificates.
  ```bash
- kubectl exec -it mongo-0 -n mongodb-rs -- mongosh --eval "rs.status()"
+ kubectl
+   ``` 
+- Wait a few minutes for all pods to be ready:
+   ```bash
+ kubectl exec -it mon
    ``` 
 - You should see:
     
