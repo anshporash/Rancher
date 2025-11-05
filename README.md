@@ -11,4 +11,9 @@
     - ```bash
       curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 
-   ```
+     ```
+ 4. **Ingress Controller**
+     - Rancher needs an ingress controller like **NGINX**
+     - If not installed:
+        ```bash
+        
