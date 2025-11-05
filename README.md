@@ -78,9 +78,8 @@ if you'r testing locally or don't have DNS setup,you can use a`NodePort` or `por
 ---
 ## Verify Installation
     ```bash
-      kubectl get all -n cattle-system
-      
-   ```
+      kubectl get all -n cattle-system  
+    ```
 - You should see Rancher's Deployment,Service,and Ingress running.
   
     
