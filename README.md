@@ -29,5 +29,8 @@
 ## STEP 2: Create the **Cattle-system** Namespace
    ```bash
       kubectl create namespace cattle-system
+ ```
+## STEP 2: Install a TLS Certificate(Recommended via cert-manager)
+ - Rancher users HTTPS. You can use **cert-manger** to automate certificates.
+   
 
-       ```
