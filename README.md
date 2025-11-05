@@ -34,8 +34,8 @@
  - Rancher users HTTPS. You can use **cert-manger** to automate certificates.
     ```bash
        kubectl apply -f https://github.com/cert-manager/cert-manager/releases/latest/download/cert-manager.yaml
- ```
-- wait a few minutes for all pods to be ready:
+```
+  - wait a few minutes for all pods to be ready:
     ```bash
        kubectl get pods -n cert-manager
  ```
