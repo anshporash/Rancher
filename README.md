@@ -48,11 +48,14 @@
   --set hostname=your.domain.com \
   --set replicas=1
 
-
    ```
-## STEP 5: Create the **Cattle-system** Namespace
+## STEP 5: Wait for Rancher to Deploy
    ```bash
-      kubectl create namespace cattle-system
+      kubectl -n cattle-system rollout status deploy/rancher
  ```
+- When it's complete:
+   ```bash
+  kubectl get pods -n cattle-system
+   ```
     
 
