@@ -8,7 +8,7 @@
  2. **Kubectl access**
      -  You should be able to run `kubectl get nodes` successfully.
  3. **Helm 3 installed**
-    - ```bash
+     ```bash
       curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
      ```
  4. **Ingress Controller**
