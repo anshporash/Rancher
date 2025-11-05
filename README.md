@@ -59,6 +59,14 @@
    ```
    - You should see Rancher pods running.
   ---
+## STEP 6: Access the Rancher UI
+   - Open your browser and go to:
+   ```bash
+      Https:your.domain.com
+ ```
+- Set the admin password the first time you log in.
+ ---
+ 
   
     
 
