@@ -67,7 +67,7 @@
 - Set the admin password the first time you log in.
  ---
 ## Optional: if you Don't Have a Domain
--if you'r testing locally or don't have DNS setup,you can use a`NodePort` or `port-forward` to access Rancher:
+if you'r testing locally or don't have DNS setup,you can use a`NodePort` or `port-forward` to access Rancher:
    ```bash
       kubectl -n cattle-system port-forward svc/rancher 8443:443
  ```
@@ -75,6 +75,11 @@
     ```bash
       https://localhost:8443
  ```
+## Verify Installation
+    ```bash
+      kubectl get all -n cattle-system
+ ```
+-You should see Rancher's Deployment,Service,and Ingress running.
   
     
 
