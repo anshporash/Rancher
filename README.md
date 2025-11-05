@@ -25,10 +25,10 @@
       helm repo add rancher-latest https://releases.rancher.com/server-charts/latest
       helm repo update
      
-     ```
+        ```
      
 ## STEP 2: Create the **Cattle-system** Namespace
    ```bash
       kubectl create namespace cattle-system
 
-     ```
+       ```
